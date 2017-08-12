@@ -1,0 +1,14 @@
+
+<div class="container">
+  <h1>My Car App</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+    <app-cockpet (newServerCreated)="onServerAdded($event)"></app-cockpet>
+    </div>
+    <div class="col-md-7">
+    <app-cardetails *ngFor="let detail of details" [cardetails]="detail"></app-cardetails>
+    </div>
+  </div>
+<app-carlist (detailsCreated) ="onDisplayAdded($event)" *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-carlist>
+</div>

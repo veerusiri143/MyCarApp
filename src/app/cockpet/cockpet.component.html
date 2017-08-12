@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="col-md-5">
+<div class="form-group">
+    <label for="carname">Car Name:</label>
+    <input type="text" class="form-control" name="carname" [(ngModel)]="carName">
+  </div>
+  <div class="form-group">
+      <label for="cartype">Car Type:</label>
+      <input type="text" class="form-control" name="cartype"  [(ngModel)]="carType">
+    </div>
+    <div class="form-group">
+        <label for="carimage">Email Image:</label>
+        <input type="text" class="form-control" name="carimage"  [(ngModel)]="carImage">
+      </div>
+      <button type="button" class="btn btn-success"   (click)="onAddServer(carName, carType, carImage )">Success</button>
+</div>
+
+
+</div>
